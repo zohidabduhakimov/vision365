@@ -29,8 +29,25 @@ jobs:
         run: |
           npm install
 
+      - name: Prepare Web Assets in www folder
+        run: |
+          mkdir -p www
+          cp index.html manifest.json sw.js privacy.html www/
+          cp -r icons www/ || true
+          cp *.png www/ || true
+
       - name: Initialize Capacitor Android Platform
         run: |
+          cat << 'EOF' > capacitor.config.json
+          {
+            "appId": "com.abduhakimov.vision365",
+            "appName": "Vision 365",
+            "webDir": "www",
+            "server": {
+              "androidScheme": "https"
+            }
+          }
+          EOF
           npx cap add android
           npx cap sync android
 
