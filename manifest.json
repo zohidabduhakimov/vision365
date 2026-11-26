@@ -1,0 +1,50 @@
+{
+  "name": "Vision 365 — 1 Yillik Shaxsiy Rivojlanish va Maqsadlar Tizimi",
+  "short_name": "Vision365",
+  "description": "2026-yilgi 12 oylik shaxsiy va karyera maqsadlarini rejalashtirish, monitoring qilish va Telegram orqali sinxronlash tizimi",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "com.abduhakimov.vision365",
+  "display": "standalone",
+  "display_override": ["standalone", "window-controls-overlay", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#05070E",
+  "theme_color": "#05070E",
+  "lang": "uz",
+  "categories": ["productivity", "lifestyle", "education"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Yangi Maqsad",
+      "short_name": "Maqsad +",
+      "description": "Yangi strategik maqsad qo'shish",
+      "url": "./index.html#tracker-section",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Ariza Qoldirish",
+      "short_name": "Ariza",
+      "description": "1 yillik dasturga a'zo bo'lish arizasi",
+      "url": "./index.html#registration-section",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
